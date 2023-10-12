@@ -218,11 +218,23 @@ This data must be downloaded directly from GADM.
 While the data license permits free use of data for research purposes and publication, it does not permit redistribution.
 
 ```{r download-traditional-authorities, message = FALSE}
-if (!"MWI_adm2.shp" %in% list.files(private_r)) {
-  download(
-    "https://biogeo.ucdavis.edu/data/gadm2.8/shp/MWI_adm_shp.zip",
-    here(scratch, "MWI_adm_shp.zip")
-  )
+# This download didn't work. Instead, I cloned the 'restricted data' folder on GitHub to my local machine.
+## I made a copy of that data and moved the file into RPr-Malcomb-2014/data/scratch
+# Import locally-stored data:
+
+# original code
+# if (!"MWI_adm2.shp" %in% list.files(private_r)) {
+#   download(
+#     "https://biogeo.ucdavis.edu/data/gadm2.8/shp/MWI_adm_shp.zip",
+#     here(scratch, "MWI_adm_shp.zip")
+#   )
+# modified download code 
+## getting a 404 page not found error
+# if (!"MWI_adm2.shp" %in% list.files(private_r)) {
+#   download(
+#     "https://github.com/opengisci/restricted-data/blob/main/MWI_adm2.zip",
+#     here(scratch, "MWI_adm2_shp.zip")
+#   )
 
   # list all the second administrative level (traditional authority) files
   # (code developed before GADM started offering more useful file types)
@@ -235,9 +247,9 @@ if (!"MWI_adm2.shp" %in% list.files(private_r)) {
     files = MWI_adm_files
   )
   rm(MWI_adm_files)
-} else {
-  message("Traditional authorites data already downloaded.")
-}
+# } else {
+#   message("Traditional authorites data already downloaded.")
+# }
 ```
 
 ## Traditional authorities (TAs)
