@@ -1230,4 +1230,46 @@ write_stars(vulnerability_r, here(public_d, "fig5rp.tif"), layer = "rpv")
 
 
 ## Create Alternate Vulnerability Score
-Aggregating adaptive capacity (assets and access), livelihood sensitivity, and physical exposure is insensitive to outliers. 
+Aggregating adaptive capacity (assets and access), livelihood sensitivity, and physical exposure is insensitive to outliers. However, the purpose of a vulnerability index is to identify high (and low) priority areas for intervention: essentially, outliers.
+
+Calculate vulnerability score using geometric aggregation.
+$$
+Vulnerability = (40 - Adaptive Capacity) * Livelihood Sensitivity * Drought Exposure * Flood Risk
+$$
+```{r geometric-combined-vulnerability}
+# final output (multiply component rasters)
+vulnerability_rg <- (40 - capacity_r) * sensitivity_r * drought_r * flood_r 
+# 100 = highest vulnerability, 0 = lowest vulnerability
+names(vulnerability_rg) <- "vulnerability (geometric aggregation)"
+plot(vulnerability_rg)
+```
+ 
+## Figure 6: Geometric Vulnerability 
+
+```{r find break & limit values for geometric vulnerability map}
+g_vuln_max <- max(vulnerability_rg[[1]],na.rm = TRUE)
+g_vuln_min <- min(vulnerability_rg[[1]],na.rm = TRUE)
+```
+
+```{r geometric-vulnerability-map}
+g_vuln_map = ggplot() +
+  geom_stars(data = vulnerability_rg) +
+  scale_fill_gradient(
+    low = "#FFFF75",
+    high = "#CF4611",
+    breaks = c(g_vuln_min, g_vuln_max),
+    labels = c("Lower Vulnerability", "Higher Vulnerability"),
+    na.value = "transparent",
+    guide = "colourbar",
+    limits = c(g_vuln_min, g_vuln_max)
+  ) +
+  labs(title = "Malawi Vulnerability to Climate Change") +
+  theme_minimal() +
+  theme(
+    legend.title = element_blank(),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank()
+  ) +   coord_quickmap()
+
+g_vuln_map
+```
