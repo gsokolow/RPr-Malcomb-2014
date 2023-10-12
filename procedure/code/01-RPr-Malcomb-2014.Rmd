@@ -1227,3 +1227,7 @@ write_stars(vulnerability_r, here(public_d, "fig5diff.tif"), layer = "diffv")
 write_stars(vulnerability_r, here(public_d, "fig5or.tif"), layer = "orv")
 write_stars(vulnerability_r, here(public_d, "fig5rp.tif"), layer = "rpv")
 ```
+
+
+## Create Alternate Vulnerability Score
+Aggregating adaptive capacity (assets and access), livelihood sensitivity, and physical exposure is insensitive to outliers. 
