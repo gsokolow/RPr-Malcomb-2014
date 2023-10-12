@@ -1273,3 +1273,60 @@ g_vuln_map = ggplot() +
 
 g_vuln_map
 ```
+
+
+### Discussion
+
+
+
+Provide a summary and interpretation of the key findings of the replication *vis-a-vis* the original study results. If the attempt was a failure, discuss possible causes of the failure. In this replication, any failure is probably due to practical causes, which may include:
+- lack of data
+- lack of code
+- lack of details in the original analysis
+- uncertainties due to manner in which data has been used
+
+
+
+# Conclusions
+
+
+# Integrity Statement
+
+This report and its preregistration were written after already attempting the reproduction study, including acquisition and analysis of all of the secondary data sources required.
+However, the preregistered analysis plan was written *as if* we had no prior knowledge of the data other than what is documented in the study.
+Holler has previously reviewed and compared other climate vulnerability models for Malawi, and conducted a scoping study in the Lilongwe and Mangochi districts of Malawi in 2015, including meeting with the Regional Centre for Mapping of Resources for Development (RCMRD) consultants who created the Malawi Hazards and Vulnerability Atlas ([2015](https://doi.org/10.13140/RG.2.1.1460.0402)).
+
+# References
+
+## Referencing the original paper
+
+Malcomb, D. W., E. A. Weaver, and A. R. Krakowka. 2014. Vulnerability modeling for sub-Saharan Africa: An operationalized approach in Malawi. *Applied Geography* 48:17–30. DOI:[10.1016/j.apgeog.2014.01.004](https://doi.org/10.1016/j.apgeog.2014.01.004).
+
+### Sections
+
+1. Introduction
+2. Complex vulnerability
+3. Evidence-based Indicators
+4. Methodology
+5. Results
+6. Discussion
+7. Conclusion
+
+### Tables, figures, other elements
+
+- T1 Evidence-based complex vulnerability indicators
+- T2 Weighted indicators by metatheme
+- F1 Map of Malawi
+- F2 Vulnerability web
+- F3 Malawi Household Resilience (2004)
+- F4 Malawi Household Resilience (2010)
+- F5 Malawi Composite Vulnerability Index
+- A1 Appendix 1
+- R References
+
+## Other References
+
+Barrett, S. 2014. Subnational Climate Justice? Adaptation Finance Distribution and Climate Vulnerability. World Development 58:130–142. DOI: [10.1016/j.worlddev.2014.01.014](http://dx.doi.org/10.1016/j.worlddev.2014.01.014).
+Gallopín, G. C. 2006. Linkages Between Vulnerability, Resilience, and Adaptive Capacity. Global Environmental Change 16 (3):293–303. DOI: [10.1016/j.gloenvcha.2006.02.004](https://doi.org/10.1016/j.gloenvcha.2006.02.004).
+Rufat, S., E. Tate, C. G. Burton, and A. S. Maroof. 2015. Social vulnerability to floods: Review of case studies and implications for measurement. *International Journal of Disaster Risk Reduction* 14:470–486. DOI: [10.1016/j.ijdrr.2015.09.013](http://dx.doi.org/10.1016/j.ijdrr.2015.09.013).
+Smit, B., and J. Wandel. 2006. Adaptation, adaptive capacity and vulnerability. Global Environmental Change 16 (3):282–292. DOI: [10.1016/j.gloenvcha.2006.03.008](https://doi.org/10.1016/j.gloenvcha.2006.03.008).
