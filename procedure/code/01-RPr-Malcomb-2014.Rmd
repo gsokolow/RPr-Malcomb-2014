@@ -1277,7 +1277,12 @@ g_vuln_map
 
 ### Discussion
 
+# Figure Four
+data expected for 206 TAs, found for 215, though the main authors found 203 but there were errors.
 
+We expect a Spearman's rank correlation rho for a successful reproduction to have a value of 1. Thus, the Spearman's rho of 0.7891711 (How many digits are really ok to use?), indicates a partially successful reproduction.
+
+Part of the reason for this may be that the authors of the original study did not provide details as to how they scaled their adaptive capacity scores in the process of making figure 4. 
 
 Provide a summary and interpretation of the key findings of the replication *vis-a-vis* the original study results. If the attempt was a failure, discuss possible causes of the failure. In this replication, any failure is probably due to practical causes, which may include:
 - lack of data
