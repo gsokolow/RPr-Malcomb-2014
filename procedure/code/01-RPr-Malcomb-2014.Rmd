@@ -1230,7 +1230,7 @@ write_stars(vulnerability_r, here(public_d, "fig5rp.tif"), layer = "rpv")
 
 
 ## Create Alternate Vulnerability Score
-Aggregating adaptive capacity (assets and access), livelihood sensitivity, and physical exposure is insensitive to outliers. However, the purpose of a vulnerability index is to identify high (and low) priority areas for intervention: essentially, outliers.
+Additive aggregation of adaptive capacity (assets and access), livelihood sensitivity, and physical exposure is insensitive to outliers. However, the purpose of a vulnerability index is to identify high (and low) priority areas for intervention: essentially, outliers.
 
 Calculate vulnerability score using geometric aggregation.
 $$
@@ -1278,17 +1278,25 @@ g_vuln_map
 ### Discussion
 
 # Figure Four
-data expected for 206 TAs, found for 215, though the main authors found 203 but there were errors.
+We expect a Spearman's rank correlation rho for a successful reproduction to have a value of 1. Thus, the Spearman's rho of 0.7891711 generated for Figure 4, indicates a partially successful reproduction.
 
-We expect a Spearman's rank correlation rho for a successful reproduction to have a value of 1. Thus, the Spearman's rho of 0.7891711 (How many digits are really ok to use?), indicates a partially successful reproduction.
+Some of the difference between the original study and the reproduction may be due to the different numbers of Traditional Authorities found in each study. The original paper found 203 traditional authorities, but we determined that 6 of these were in conservation areas. However, we also found an additional 9 TAs hidden by the features of Lake Malawi, leading us to expect a result of 206 TAs. In our reproduction, though, we found 215. The different number of TAs found in our study may have contributed to the imperfect reproduction of Figure 4. 
 
-Part of the reason for this may be that the authors of the original study did not provide details as to how they scaled their adaptive capacity scores in the process of making figure 4. 
+An additional cause of the imperfect reproduction may have been the lack of information provided in the original study about how the adaptive capacity data was scaled. In this reproduction, we supposed that the authors may have rescaled the domain from 0 to 1.6 to 0 to 40, but this cannot be confirmed by the original manuscript.
+
 
 Provide a summary and interpretation of the key findings of the replication *vis-a-vis* the original study results. If the attempt was a failure, discuss possible causes of the failure. In this replication, any failure is probably due to practical causes, which may include:
 - lack of data
 - lack of code
 - lack of details in the original analysis
 - uncertainties due to manner in which data has been used
+
+# Figure 5
+We expect a Spearman's rank correlation rho for a successful reproduction to have a value of 1. Thus, the Spearman's rho of 0.1974578 generated for Figure 5, indicates a failed reproduction. By mapping the differences in the original Figure 5 compared with the reproduction, we see that the reproduction largely underestimated the vulnerability scores throughout Malawi.
+
+This may be due in part to the lack of information provided in the original study about how the drought data, flood data, and livelihood sensitivity scores were transformed into rasters at a uniform scale. In particular, it appears that the the coarser flood data may have been transformed to the finer scale of the drought dataset. This could be misleading, as it communicates flood risk with more detail than is available. Even so, this does not explain the discrepancy between the original study and the reproduction given that we identified and followed this unusual decision in our reproduction.
+
+In addition to replicating Figure 5 as presented in the original study, we also made an alternate version using geometric, rather than additive, aggregation. Additive aggregation is insensitive to outliers, but one use for adaptive capacity mapping is precisely to identify outliers: areas of high vulnerability may present pressing cases for aid, while areas of low vulnerability may represent areas that do not need additional aid at this time. Geometric aggregation multiplies index factors rather than adding them, so if there is a very low or very high score, it is unlikely to be cancelled out by another score in the opposite direction. In geometric aggregation, only areas with moderate scores across all factors can be considered to have moderate risk, whereas in additive aggregation, it is easier for a very low score for one factor and a very high score for another factor to cancel out and give the impression of moderate vulnerability, when this may not be the case functionally.
 
 
 
