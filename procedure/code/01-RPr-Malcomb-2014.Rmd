@@ -1293,7 +1293,9 @@ In addition to replicating Figure 5 as presented in the original study, we also 
 
 
 # Conclusions
+In this study, we were partially able to reproduce the original study's map of household resilience as a function of assets and access, but we were unable to reproduce their map of overall vulnerability. One of the goals of the original paper was to "determine geographic areas most susceptible to hazards, climatic change and vulnerability, and degraded livelihood security" in order to inform pragmatic allocation of climate change adaptation funding. The results of this reproduction study indicate that the original study could be made stronger by providing further explanation of its methods and decision-making process. In turn, this would allow for future reproduction and replication studies to test the precision of the original study as well as new methods to improve its accuracy. Furthermore, it is vital that the original study be reproducible seeing as Malawi has a rapidly growing population...
 
+that went into  For the findings of the original paper to be most effectively applied in identifying priority areas for adaptation funding, where funding might be best spent in addressing climate vulnerability, it is essential that the results of the paper be verified -> for now; and replicable -> for the future. additional info needed re: fieldwork, even though that was beyond the scope of this study 
 
 # Integrity Statement
 
